@@ -5,7 +5,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
+/** 
  * 使用@ResponseBody和方法返回字符串的简单例子。
  * @author Pactera
  * 
