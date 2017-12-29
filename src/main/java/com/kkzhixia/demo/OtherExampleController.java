@@ -1,4 +1,4 @@
-package com.kkzhixia;
+package com.kkzhixia.demo;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

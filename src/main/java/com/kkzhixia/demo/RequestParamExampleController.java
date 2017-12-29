@@ -1,4 +1,4 @@
-package com.kkzhixia;
+package com.kkzhixia.demo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
