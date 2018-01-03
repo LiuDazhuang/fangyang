@@ -5,19 +5,19 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * 登陆
+ * 首页
  * @author Pactera
  *
  */
 @Controller
-public class LoginController {
-	@RequestMapping("/login")
+public class IndexController {
+
+	@RequestMapping("/index")
 	public String hello(Model model) {
         
         model.addAttribute("user", "I am zhangsan ");
          
-        return"login";
+        return"index";
          
     }
-	
 }
