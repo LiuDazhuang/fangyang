@@ -15,7 +15,7 @@
 
 	<context:annotation-config />
 	
-	<!-- <mvc:resources location="/" mapping="/**" />  -->
+	<mvc:resources location="/" mapping="/**" /> 
 
 	<bean id="freemarkerConfig"
 		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">

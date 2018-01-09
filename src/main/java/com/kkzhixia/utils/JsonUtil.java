@@ -1,4 +1,4 @@
-package com.kkzhixia.util;
+package com.kkzhixia.utils;
 /**
  * json处理
  * @author Pactera
