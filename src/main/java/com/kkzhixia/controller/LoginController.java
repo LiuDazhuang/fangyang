@@ -12,10 +12,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class LoginController {
 	@RequestMapping("/login")
-	public String hello(Model model) {
+	public String hello(Model model,String name) {
         
-        model.addAttribute("user", "I am zhangsan ");
-         
+		model.addAttribute("message", "我是登陆页面");
+        
+		System.out.println("name:"+name); 
+		
         return"login";
          
     }

@@ -15,7 +15,7 @@
 
 	<context:annotation-config />
 	
-	<mvc:resources location="/" mapping="/**" /> 
+	<!-- <mvc:resources location="/" mapping="/**" />  -->
 
 	<bean id="freemarkerConfig"
 		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
@@ -29,18 +29,18 @@
 		<property name="order" value="0"></property>
 		<property name="contentType" value="text/html;charset=UTF-8"></property>
 	</bean>
-<!--
+
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
-		 这里的配置我的理解是自动给后面action的方法return的字符串加上前缀和后缀，变成一个 可用的url地址 
-		<property name="prefix" value="/WEB-INF/pages/" />
+		<!--  这里的配置我的理解是自动给后面action的方法return的字符串加上前缀和后缀，变成一个 可用的url地址   -->
+		<property name="prefix" value="/" />
 		<property name="suffix" value=".jsp" />
 		<property name="viewClass"
-			value="org.springframework.web.servlet.view.InternalResourceView" />  不能用jstl的那个 
+			value="org.springframework.web.servlet.view.InternalResourceView" />  <!--  不能用jstl的那个    -->
 		<property name="contentType" value="text/html;charset=UTF-8" />
-		<property name="order" value="0"></property>
+		<property name="order" value="1"></property>
 	</bean>
- -->
+ 
  	<!-- <mvc:view-controller path="/" view-name="index"/>  -->
  	
  	
