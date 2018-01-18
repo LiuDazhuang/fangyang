@@ -15,12 +15,12 @@
 
 	<context:annotation-config />
 	
-	<!-- <mvc:resources location="/" mapping="/**" />  -->
+	<mvc:resources location="/" mapping="/**" />  
 
 	<bean id="freemarkerConfig"
 		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
 		<property name="templateLoaderPath">
-			<value>/</value>
+			<value>/blog/</value>
 		</property>
 	</bean>
 	<bean id="htmlviewResolver"
