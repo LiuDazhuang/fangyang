@@ -1,5 +1,6 @@
 package com.kkzhixia.controller;
 
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -15,7 +16,8 @@ public class IndexController {
 	@RequestMapping("/index")
 	public String hello(Model model) {
         
-        model.addAttribute("user", "I am zhangsan ");
+		System.out.println("IndexController.hello()");
+		model.addAttribute("user", "I am zhangsan ");
          
         return"index";
          
